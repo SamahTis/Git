@@ -5,6 +5,7 @@ class Morpion:
         self.joueur = 'X'  # Joueur par défaut
 
     def afficher(self):
+        # Code pour afficher le plateau
         pass
 
     def jouer_coup(self, ligne, colonne):
