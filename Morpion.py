@@ -12,7 +12,11 @@ class Morpion:
             print("-" * 5)
 
     def jouer_coup(self, ligne, colonne):
-        pass
+        """Joue un coup pour le joueur actuel à la position donnée."""
+        if self.plateau[ligne][colonne] == ' ':
+            self.plateau[ligne][colonne] = self.joueur
+            return True
+        return False
 
     def changer_joueur(self):
         pass
