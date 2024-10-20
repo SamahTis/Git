@@ -1,4 +1,5 @@
 class Morpion:
+
     def __init__(self):
         self.plateau = [[' ' for _ in range(3)]
                         for _ in range(3)]  # plateau de 3x3
@@ -6,7 +7,9 @@ class Morpion:
 
     def afficher(self):
         # Code pour afficher le plateau
-        pass
+        for ligne in self.plateau:
+            print("|".join(ligne))
+            print("-" * 5)
 
     def jouer_coup(self, ligne, colonne):
         pass
